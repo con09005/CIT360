@@ -1,0 +1,33 @@
+public class ADDRESS
+{
+    public string ADDRESS1 { get; set; }
+    public string ADDRESS2 { get; set; }
+    public string ADDRESSLONG { get; set; }
+    public string ADDRESS_TYPE { get; set; }
+    public string CITY { get; set; }
+    public string COUNTRY { get; set; }
+    public string COUNTY { get; set; }
+    public string EFFDT { get; set; }
+    public string ID { get; set; }
+    public string POSTAL { get; set; }
+    public string STATE { get; set; }
+}
+
+public class GetAddressSub
+{
+    public string SAVED { get; set; }
+    public string ID { get; set; }
+    public List<ADDRESS> ADDRESS { get; set; }
+}
+
+public class GetAddress
+{
+    public string MESSAGE_TEXT_LONG { get; set; }
+    public int RETURN_CODE { get; set; }
+    public GetAddressSub GetAddressSub { get; set; }
+}
+
+public class RootObject
+{
+    public GetAddress GetAddress { get; set; }
+}
